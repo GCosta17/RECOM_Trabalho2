@@ -1,33 +1,17 @@
 import java.util.Scanner;
 
 public class RFreception {
+    double r = (3*Math.pow(10, 8)) / (5*Math.pow(10, 9));
+    double e = (3*Math.pow(10, 8)) / (2.4*Math.pow(10, 9));
 
-    public void inDoorSimulator() {
-        int floor = 14;
-        float doubleWallPlaster = 3.40F;
-        int hollowBrick = 8;
-        int massiveWall = 13;
-        int window = 6;
-
-        int numberOfWalls;
-        int numberOfFloors;
-        int numberOfDoubleWallPlaster;
-        int numberOfHollowBrick;
-        int numberOfWindows;
-
-        float transmitedPower = 0F;
-        float frequency = 0F;
-        float gain = 0F;
-        float distanceFromAP = 0F;
-
+    public double calculateInDoorSimulatorFunctionFREQ2_4 (double a, double v, float g, double e, float d, float y, float n, float k, float p, float j, float l){
+        double powerReceived = a + v + g +(20*Math.log10(e)) - (20*Math.log10(4*Math.PI)) - (20*Math.log10(d)) - y*n - k*p - j*l;
+       return powerReceived;
     }
 
-    private void UI extends inDoorSimulator () {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Introduce your frequency: ");
-        frequency = scanner.nextLine();
-
+    public double calculateInDoorSimulatorFunctionFREQ5 (double t, double b, float g, double r, float d, float y, float n, float k, float p, float j, float l){
+        double powerReceived = t+ b + g +(20*Math.log10(r)) - (20*Math.log10(4*Math.PI)) - (20*Math.log10(d)) - y*n - k*p - j*l;
+        return powerReceived;
     }
+
 }
