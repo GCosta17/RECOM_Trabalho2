@@ -26,9 +26,9 @@ public class Main {
         System.out.println(teste2_4);
         System.out.print("Valor de Lameda com 5Ghz: ");
         System.out.println(teste5);
-        System.out.printf("A potencia recebida com frequência 2.4Ghz é: ");
+        System.out.print("A potencia recebida com frequência 2.4Ghz é: ");
         System.out.println(powerReceived2_4);
-        System.out.printf("A potencia recebida com frequência 5Ghz é: ");
+        System.out.print("A potencia recebida com frequência 5Ghz é: ");
         System.out.println(powerReceived_5);
     }
 }
